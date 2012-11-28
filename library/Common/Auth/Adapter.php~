@@ -1,0 +1,83 @@
+<?php
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+class Bewan_Auth_Adapter implements Zend_Auth_Adapter_Interface{
+
+    const NOT_FOUND_MSG = 'Account not FFFfound';
+    const BAD_PW_MSG = 'Password is IIIIinvalid';
+    /**
+     *
+     * @var string
+     */
+    protected  $user;
+
+    /**
+     *
+     * @var string
+     */
+    protected  $username = "";
+
+    /**
+     *
+     * @var string
+     */
+    protected  $password = "";
+
+   
+
+
+
+    public function  __construct($username, $password)
+    {
+        $this->username = $username;
+        $this->password = $password;
+
+
+        
+
+    }
+
+    /**
+     * @throw
+     * @return
+     */
+    public function  authenticate() {
+
+        
+        try
+        {
+            $this->user = User::authenticate($this->username, $this->password);
+            //$result = new Zend_Auth_Result(Zend_Auth_Result::SUCCESS,$user);
+            return $this->createResult(Zend_Auth_Result::SUCCESS);
+        }
+        catch (Exception $e)
+        {
+            //$result = new Zend_Auth_Result($code, $identity, $messages);
+
+            if($e->getMessage()== User::WRONG_PW){
+                return $this->createResult(Zend_Auth_Result::FAILURE_CREDENTIAL_INVALID,array(self::BAD_PW_MSG));
+            }
+            if($e->getMessage()== User::NOT_FOUND){
+                return $this->createResult(Zend_Auth_Result::FAILURE_IDENTITY_NOT_FOUND,array(self::NOT_FOUND_MSG));
+            }
+
+        }
+    }
+
+    /**
+     *
+     * @param <type> $code
+     * @param <type> $messages
+     * @return Zend_Auth_Result
+     */
+    private function createResult($code,$messages = array())
+    {
+        return new Zend_Auth_Result($code, $this->user, $messages);
+    }
+
+}
+
+?>

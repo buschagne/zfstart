@@ -1,0 +1,25 @@
+<ul class="breadcrumb">
+  <li>
+    <a href="<?php echo $this->baseUrl() ?>">Home</a> <span class='divider'> | </span>
+  </li>
+  <?php
+  foreach ($this->pages as $page) {
+    ?><li><?php
+  if ($page->isActive()) {
+    echo $page->getLabel()."<span class='divider'> | </span>";
+      ?><?php
+  } else {
+        ?>
+      <a href='
+        <?php echo $this->baseUrl() ?>/
+        <?php echo $page->getController() ?>/
+        <?php echo $page->getAction() ?>
+        '>
+        <?php echo $page->getLabel() ?>
+      </a>
+        <?php
+      }
+      ?></li><?php
+  }
+    ?>
+</ul>

@@ -1,0 +1,172 @@
+
+
+
+date;Date
+day;Day
+all;All
+general;General
+label;Label
+week;Week
+
+
+days;Days
+monday;Monday
+tuesday;Tuesday
+wednesday;Wednesday
+thursday;Thursday
+friday;Friday
+saturday;Saturday
+sunday;Sunday
+
+months;Months
+year;Year
+
+january;January
+february;February
+march;March
+april;April
+may;May
+june;June
+july;July
+august;August
+september;September
+october;October
+november;November
+december;December
+
+
+your;Your
+my;My
+
+personal;Personal
+profile;Profile
+account;Account
+information;Information
+
+contract_information;Contract Information
+
+first_name;First Name
+last_name;Last Name
+name;Name
+email;email
+language;Language
+real_name;Real Name
+username;Username
+password; Password
+old_password;Old Password
+new_password;New Password
+
+sex;Sex
+dob;Date of Birth
+birthday;Birthday
+nationality;Nationality
+
+bank_account_number;Bank Account Number
+bic;BIC
+
+postal;Postal
+postal_box;POBox
+postal_code;Postal Code
+
+residential;Residential
+address;Address
+street,Street
+number;Number
+
+city;City
+town;Town
+country;Country
+province;Province
+region;Region
+
+phone;Phone
+mobile;Mobile
+
+mail;Mail
+
+marital_status;Marital Status
+
+Married;Married
+Divorced;Divorced
+Cohabiting;Cohabiting
+Single;Single
+its_complicated;It's complicated
+
+
+
+actions;Actions
+
+add;Add
+edit;Edit
+clear;Clear
+confirm;Confirm
+login;Login
+logout;Logout
+sign_in;Sign In
+print;Print
+remove;Remove
+submit;Submit
+save;Save
+save_changes;Save Changes
+select;Select
+activate;Activate
+deactivate;Deactivate
+reset;Reset
+
+
+next;Next
+previous;Previous
+
+created_at;Created
+updated_at;Updated
+
+Y;Yes
+N;No
+
+confirm_question;Do you really want to delete this?
+confirm_delete; Click 'Confirm' to delete or 'Cancel' to cancel.
+confirm;Confirm
+cancel;Cancel
+
+no_permission;You do not have permission to do this.
+
+open;Open
+close;Close
+
+
+
+babble;Babbel
+Find a babble friend;Zoek een babbel vriend
+babble topics;Kies een onderwerp
+Schedule a babble;Boek een babbel
+Who is online;Wie is online
+random babble now!;Babbel nu!
+
+Listen/Watch;Kijk en luister
+Listen LIVE!;Luister LIVE
+Listen to recordings/podcasts; Kijk/luister na PODCASTS
+Listen to tutorials; Luister na TUTORIALS
+
+Record;Opneem
+Upload Link Recording; Soundfile opladen
+Record Voice session;Stem Opneem
+Record Video session;Video opneem
+
+Ask a question;Stel een vraag
+Ask WikiQuestion;Deurzoek de vragen 
+Browse WikiAnswers;Deurzoek de antwoorden
+  
+Meet and greet;Ontmoet en groet
+Find more friends via our FB;Link via FB
+Join our Twitter Conversation;Gesels saam via Twitter
+wabliefsocial;Wablief gezellig
+
+Browse our YouTube Channel;Deurzoek de Youtube Channel
+
+your_profile;Jouw Profiel
+notifications;5 New Notices
+
+
+
+ 
+

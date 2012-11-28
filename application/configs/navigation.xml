@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+  <webnav>
+    
+    <conversation>
+      <label>babble</label>
+      <controller>conversation</controller>
+      <action>index</action>
+      
+      <pages>
+        <babble-find>
+          <label>Find a babble friend</label>
+          <controller>conversation</controller>
+          <action>index</action>
+        </babble-find>
+        
+        <babble-topic>
+          <label>babble topics</label>
+          <controller>conversation</controller>
+          <action>index</action>
+        </babble-topic>
+        
+        <babble-schedule>
+          <label>Schedule a babble</label>
+          <controller>conversation</controller>
+          <action>index</action>
+        </babble-schedule>
+        
+        <babble-online>
+          <label>Who is online</label>
+          <controller>conversation</controller>
+          <action>index</action>
+        </babble-online>
+        
+        <random-babble>
+          <label>random babble now!</label>
+          <controller>conversation</controller>
+          <action>index</action>
+        </random-babble>
+      </pages>
+    </conversation>
+
+    
+    
+    <listen>
+      <label>Listen/Watch</label>
+      <controller>streamcast</controller>
+      <action>index</action>
+      
+      <pages>
+        <streamlive>
+          <label>Listen LIVE!</label>
+          <controller>streamcast</controller>
+          <action>index</action>
+        </streamlive>
+        
+        <streamcast>
+          <label>Listen to recordings/podcasts</label>
+          <controller>streamcast</controller>
+          <action>index</action>
+        </streamcast>
+        
+        <tutorial>
+          <label>Listen to tutorials</label>
+          <controller>tutorial</controller>
+          <action>index</action>
+        </tutorial>
+      </pages>
+    </listen>
+    
+    <record>
+      <label>Record</label>
+      <controller>recording</controller>
+      <action>index</action>
+      
+      <pages>
+        <record-upload>
+          <label>Upload Link Recording</label>
+      <controller>recording</controller>
+      <action>index</action>
+        </record-upload>
+        
+        <record-voice>
+          <label>Record Voice session</label>
+      <controller>recording</controller>
+      <action>index</action>
+        </record-voice>
+        
+        <record-video>
+          <label>Record Video session</label>
+          <controller>recording</controller>
+          <action>index</action>
+        </record-video>
+      </pages>
+    </record>
+
+    <wiki>
+      <label>Ask a question</label>
+      <controller>wiki</controller>
+      <action>index</action>
+      <pages>
+        <question>
+        <label>Ask WikiQuestion</label>
+      <controller>wiki</controller>
+      <action>index</action>  
+        </question>
+        <answer>
+          <label>Browse WikiAnswers</label>
+          <controller>wiki</controller>
+          <action>index</action>  
+        </answer>
+      </pages>
+    </wiki>
+    
+    <social>
+      <label>Meet and greet</label>
+      <controller>wabliefsocial</controller>
+      <action>index</action>
+      <pages>
+        <wabliefFB>
+        <label>Find more friends via our FB</label>
+      <controller>wabliefsocial</controller>
+      <action>index</action>  
+        </wabliefFB>
+        
+        <wablieT>
+          <label>Join our Twitter Conversation</label>
+          <controller>wabliefsocial</controller>
+          <action>index</action>  
+        </wablieT>
+        
+        <wabliefYT>
+          <label>Browse our YouTube Channel</label>
+          <controller>wabliefsocial</controller>
+          <action>index</action>  
+        </wabliefYT>
+        
+      </pages>
+    </social>
+     <social2>
+      <label>your_profile</label>
+      <controller>wabliefsocial</controller>
+      <action>index</action>
+      <pages>
+        <logout>
+        <label>logout</label>
+      <controller>wabliefsocial</controller>
+      <action>index</action>  
+        </logout>
+        
+      </pages>
+      </social2>
+    
+    
+  </webnav>
+</zend-config>
