@@ -1,4 +1,6 @@
-
+<div class="navbar">
+        <div class="navbar-inner">
+      
 <div class="nav-collapse">
   <ul class="nav">
     <?php
@@ -14,7 +16,7 @@
               <?php
             } else {
               ?>
-              <li><a href="<?php echo $this->baseUrl() . "/" . $page->getController() . "/" . $page->getAction(); ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->translate($page->getLabel()) ?></a>
+              <li><a href="<?php echo $this->baseUrl() . "/" . $page->getController() . "/" . $page->getAction(); ?>"><?php echo $this->translate($page->getLabel()) ?></a>
                 <?php
               }
               foreach ($page->getPages() AS $subPage) {
@@ -30,7 +32,7 @@
                       <?php
                     } else {
                       ?>
-                      <li><a href="<?php echo $this->baseUrl() . "/" . $subPage->getController() . "/" . $subPage->getAction(); ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->translate($subPage->getLabel()) ?></a>
+                      <li><a href="<?php echo $this->baseUrl() . "/" . $subPage->getController() . "/" . $subPage->getAction(); ?>" ><?php echo $this->translate($subPage->getLabel()) ?></a>
                         <?php
                       }
                       foreach ($subPage->getPages() AS $subsubPage) {
@@ -56,3 +58,5 @@
   </ul>
 
 </div>
+     </div><!-- eo navbar inner -->
+      </div><!-- eo navbar -->

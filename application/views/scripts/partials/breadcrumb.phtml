@@ -1,22 +1,23 @@
-<ul class="breadcrumb">
+
+<ul class="breadcrumb2">
   <li>
-    <a href="<?php echo $this->baseUrl() ?>">Home</a> <span class='divider'> | </span>
+    <a href="<?php echo $this->baseUrl() ?>"><?= $this->translate('home'); ?></a> 
   </li>
   <?php
   foreach ($this->pages as $page) {
     ?><li><?php
   if ($page->isActive()) {
-    echo $page->getLabel()."<span class='divider'> | </span>";
-      ?><?php
-  } else {
+      ?>
+        <span class='divider'> | </span>&nbsp<?= $this->translate($page->getLabel()); ?>
+        <?php
+      } else {
         ?>
-      <a href='
-        <?php echo $this->baseUrl() ?>/
-        <?php echo $page->getController() ?>/
-        <?php echo $page->getAction() ?>
-        '>
-        <?php echo $page->getLabel() ?>
-      </a>
+        <a href='
+           <?php echo $this->baseUrl() ?>/
+           <?php echo $page->getController() ?>/
+           <?php echo $page->getAction() ?>'>
+          <span class='divider'> | </span><?= $this->translate($page->getLabel()) ?>
+        </a>
         <?php
       }
       ?></li><?php

@@ -1,0 +1,14 @@
+<div class="pull-right">
+  <a href="<?= $this->baseUrl() ?>/index/language/lang/en">EN</a> |
+  <a href="<?= $this->baseUrl() ?>/index/language/lang/fr">FR</a> |
+  <a href="<?= $this->baseUrl() ?>/index/language/lang/nl">NL</a>
+  <img src="<?php echo $this->baseUrl() ?>/images/logos/FB_logo.png" width="20px"/>
+  <img src="<?php echo $this->baseUrl() ?>/images/logos/twitter_logo.png" width="20px"/>
+  <img src="<?php echo $this->baseUrl() ?>/images/logos/youtube.png" width="20px"/> 
+  <div>
+    <form action="<?= $this->baseUrl().'/wpblog/search';?>" class="form form-search">
+      <input id="autocomplete" type="text" name="search" value="" class="input-medium"/>
+      <input class="btn btn-small" type="submit" value="<?= $this->translate('search');?>"/>
+    </form>
+  </div>
+</div>

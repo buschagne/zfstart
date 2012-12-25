@@ -18,8 +18,7 @@
     <?php $this->headScript()->appendFile($this->baseUrl() . "/js/my.js"); ?>
 
     <?php echo $this->partial('partials/headmeta.phtml'); ?>
-
-
+    
     <?php echo $this->headLink(); ?>
     <?php echo $this->headStyle(); ?>
     <?php echo $this->headScript(); ?>
@@ -27,21 +26,45 @@
   </head>
   <body>
     <div class="container">
-      <?= $this->navigation()->menu()->setPartial("partials/menu.phtml"); ?>
+      <?php //echo $this->navigation()->menu()->setPartial("partials/menu.phtml"); ?>
+      <div class="hero-unit">
+    <?php echo $this->partial('partials/social.phtml'); ?>
+        <img src="<?php echo $this->baseUrl() ?>/images/memela-logo.jpg" width="200px"/>
+        <h1><?php echo $this->translate('memela_name');?></h1>
+        <h3><?php echo $this->translate('memela_short_description');?></h3>
+        <p><?php echo $this->translate('memela_description');?></p>
+        <h6><?php echo $this->translate('memela_tagline1');?> | <?php echo $this->translate('memela_tagline2');?></h6>  
+      
+       
 
-      <?php echo $this->partial('partials/brandsocial.phtml'); ?>
 
-      <div id="main" class="well">
 
-        <?php echo $this->navigation()->breadcrumbs()->setPartial("partials/breadcrumb.phtml"); ?>
+
+
+
         <?php echo $this->layout()->content; ?>
 
+
+
+
+
+
+
+
+
+
       </div>
+        <?php echo $this->partial('partials/carousel.phtml'); ?>
       <div id="footer" class="well">
+        
         <?php echo $this->partial('partials/bloglinks.phtml'); ?>
       </div>
-
     </div>
+
+
+
+
+
 
     <?php echo $this->inlineScript(); ?>
   </body>

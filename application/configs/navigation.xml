@@ -1,155 +1,213 @@
 <?xml version="1.0"?>
 <zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
   <webnav>
-    
-    <conversation>
-      <label>babble</label>
-      <controller>conversation</controller>
+    <memela>
+      <label>memela</label>
+      <controller>memela</controller>
       <action>index</action>
       
       <pages>
-        <babble-find>
-          <label>Find a babble friend</label>
-          <controller>conversation</controller>
-          <action>index</action>
-        </babble-find>
+        <hosts>
+          <label>your_hosts</label>
+          <controller>memela</controller>
+          <action>hosts</action>
+        </hosts>
+        <gallery>
+          <label>gallery</label>
+          <controller>memela</controller>
+          <action>gallery</action>
+        </gallery>
+        <lodge>
+          <label>the_lodge</label>
+          <controller>memela</controller>
+          <action>lodge</action>
+        </lodge>
         
-        <babble-topic>
-          <label>babble topics</label>
-          <controller>conversation</controller>
-          <action>index</action>
-        </babble-topic>
+        <bush-camp>
+          <label>the_bush_camp</label>
+          <controller>memela</controller>
+          <action>bush-camp</action>
+        </bush-camp>
         
-        <babble-schedule>
-          <label>Schedule a babble</label>
-          <controller>conversation</controller>
-          <action>index</action>
-        </babble-schedule>
-        
-        <babble-online>
-          <label>Who is online</label>
-          <controller>conversation</controller>
-          <action>index</action>
-        </babble-online>
-        
-        <random-babble>
-          <label>random babble now!</label>
-          <controller>conversation</controller>
-          <action>index</action>
-        </random-babble>
+        <camping>
+          <label>the_camp_site</label>
+          <controller>memela</controller>
+          <action>camping</action>
+        </camping>
+        <news>
+          <label>news</label>
+          <controller>memela</controller>
+          <action>news</action>
+        </news>
       </pages>
-    </conversation>
-
+    </memela>
     
     
-    <listen>
-      <label>Listen/Watch</label>
-      <controller>streamcast</controller>
-      <action>index</action>
-      
-      <pages>
-        <streamlive>
-          <label>Listen LIVE!</label>
-          <controller>streamcast</controller>
-          <action>index</action>
-        </streamlive>
-        
-        <streamcast>
-          <label>Listen to recordings/podcasts</label>
-          <controller>streamcast</controller>
-          <action>index</action>
-        </streamcast>
-        
-        <tutorial>
-          <label>Listen to tutorials</label>
-          <controller>tutorial</controller>
-          <action>index</action>
-        </tutorial>
-      </pages>
-    </listen>
     
-    <record>
-      <label>Record</label>
-      <controller>recording</controller>
-      <action>index</action>
-      
-      <pages>
-        <record-upload>
-          <label>Upload Link Recording</label>
-      <controller>recording</controller>
-      <action>index</action>
-        </record-upload>
-        
-        <record-voice>
-          <label>Record Voice session</label>
-      <controller>recording</controller>
-      <action>index</action>
-        </record-voice>
-        
-        <record-video>
-          <label>Record Video session</label>
-          <controller>recording</controller>
-          <action>index</action>
-        </record-video>
-      </pages>
-    </record>
-
-    <wiki>
-      <label>Ask a question</label>
-      <controller>wiki</controller>
+    
+    <memela-information>
+      <label>information_faq</label>
+      <controller>memela-information</controller>
       <action>index</action>
       <pages>
         <question>
-        <label>Ask WikiQuestion</label>
-      <controller>wiki</controller>
-      <action>index</action>  
+          <label>faq</label>
+          <controller>memela-information</controller>
+          <action>faq</action>  
         </question>
-        <answer>
-          <label>Browse WikiAnswers</label>
-          <controller>wiki</controller>
-          <action>index</action>  
-        </answer>
+        
+        <pdf>
+          <label>download_brochure_pdf</label>
+          <controller>memela-information</controller>
+          <action>pdf</action>  
+        </pdf>
+        <rates>
+          <label>rates</label>
+          <controller>memela-information</controller>
+          <action>rates</action>
+        </rates>
+        <contact-information>
+          <label>contacts</label>
+          <controller>memela-information</controller>
+          <action>contacts</action>
+        </contact-information>
       </pages>
-    </wiki>
+    </memela-information>
+
+    <attractions_activities>
+<label>our_tours_activities</label>
+<controller>kosi-bay-tours</controller>  
+<action>index</action>
+<pages>
+  <fishing>
+    <label>fishing_tours</label>
+  <controller>kosi-bay-tours</controller>
+  <action>fishing</action>
+  </fishing>
+  <hiking>
+    <label>hiking_tours</label>
+  <controller>kosi-bay-tours</controller>
+  <action>hiking</action>
+  </hiking>
+  <backpacker>
+    <label>backpacker_tours</label>
+  <controller>kosi-bay-tours</controller>
+  <action>backpacker</action>
+  </backpacker>
+  <birding>
+    <label>birding_tours</label>
+  <controller>kosi-bay-tours</controller>
+  <action>birding</action>
+  </birding>
+  <diving>
+    <label>diving_tours</label>
+  <controller>kosi-bay-tours</controller>
+  <action>diving</action>
+  </diving>
+  <nature>
+    <label>nature_tours</label>
+  <controller>kosi-bay-tours</controller>
+  <action>nature</action>
+  </nature>
+  <cultural>
+    <label>cultural_tours</label>
+  <controller>kosi-bay-tours</controller>
+  <action>cultural</action>
+  </cultural>
+</pages>
+    </attractions_activities>    
+    
+    <kosibay>
+      <label>kosi_bay</label>
+      <controller>kosi-bay</controller>
+      <action>index</action>
+      
+      <pages>
+        <map>
+          <label>kosi_bay_map</label>
+          <controller>kosi-bay</controller>
+          <action>map</action>
+        </map>
+        <region>
+          <label>the_region</label>
+          <controller>kosi-bay</controller>
+          <action>region</action>
+        </region>
+        <isimangaliso>
+          <label>isimangaliso</label>
+          <controller>kosi-bay</controller>
+          <action>isimangaliso</action>
+        </isimangaliso>
+        <directions>
+          <label>kosi_bay_directions</label>
+          <controller>kosi-bay</controller>
+          <action>directions</action>
+        </directions>
+        <manguzi>
+          <label>manguzi</label>
+          <controller>kosi-bay</controller>
+          <action>manguzi</action>
+        </manguzi>
+        <borderpost>
+          <label>border_post</label>
+          <controller>kosi-bay</controller>
+          <action>border-post</action>
+        </borderpost>
+      </pages>
+    </kosibay>
     
     <social>
-      <label>Meet and greet</label>
-      <controller>wabliefsocial</controller>
+      <label>follow_us</label>
+      <controller>social</controller>
       <action>index</action>
       <pages>
-        <wabliefFB>
-        <label>Find more friends via our FB</label>
-      <controller>wabliefsocial</controller>
-      <action>index</action>  
-        </wabliefFB>
+        <FB>
+          <label>fb</label>
+          <controller>social</controller>
+          <action>fb</action>  
+        </FB>
         
-        <wablieT>
-          <label>Join our Twitter Conversation</label>
-          <controller>wabliefsocial</controller>
-          <action>index</action>  
-        </wablieT>
+        <twitter>
+          <label>twitter</label>
+          <controller>social</controller>
+          <action>twitter</action>  
+        </twitter>
         
-        <wabliefYT>
-          <label>Browse our YouTube Channel</label>
-          <controller>wabliefsocial</controller>
-          <action>index</action>  
-        </wabliefYT>
+        <youtube>
+          <label>youtube</label>
+          <controller>social</controller>
+          <action>youtube</action>  
+        </youtube>
         
       </pages>
     </social>
-     <social2>
+    <user>
       <label>your_profile</label>
-      <controller>wabliefsocial</controller>
+      <controller>user</controller>
       <action>index</action>
       <pages>
-        <logout>
-        <label>logout</label>
-      <controller>wabliefsocial</controller>
-      <action>index</action>  
-        </logout>
-        
+        <new_booking_inquiry>
+          <label>new_booking_inquiry</label>
+          <controller>user</controller>
+          <action>inquiry</action>  
+        </new_booking_inquiry>
+        <check_reservation>
+          <label>check_reservation</label>
+          <controller>user</controller>
+          <action>reservation</action>  
+        </check_reservation>
+        <subscribe>
+          <label>subscribe</label>
+          <controller>user</controller>
+          <action>subscribe</action>    
+        </subscribe>
+        <sign_in>
+          <label>sign_in</label>
+          <controller>user</controller>
+          <action>sign_in</action>  
+        </sign_in>
       </pages>
-      </social2>
+    </user>
     
     
   </webnav>

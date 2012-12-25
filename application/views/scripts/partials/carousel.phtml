@@ -1,0 +1,65 @@
+
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <?php
+$carousel = array(
+          array('image' => 'zfcarousel/slideshow/header1.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header2.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header3.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header4.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header5.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header6.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header7.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header8.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header9.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header10.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header11.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header12.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header13.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header14.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header15.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header16.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header17.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header18.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header19.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header20.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header21.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header22.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header23.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header24.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header25.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header26.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header27.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header28.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header29.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header30.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header31.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header32.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          array('image' => 'zfcarousel/slideshow/header33.jpg','title'=> 'Kosi Bay','description'=> 'Kosi Bay - Nature Culture and Adventure - Isimangaliso Tembe'),
+          
+
+)
+?>
+
+  <div id="carousel" class="carousel-inner">
+    <div class="active item"><img alt="<?php echo $carousel[11]['title'].' '.$carousel[11]['description'] ?>" src="<?php echo $this->baseUrl().'/'.$carousel[11]['image'] ?>" width="100%">
+      <div class="carousel-caption">
+        <h4><?php echo $carousel[11]['title'] ?></h4>
+        <p><?php echo $carousel[11]['description'] ?></p>
+      </div>
+    </div>
+    <?php foreach($carousel as $carouselitem){ ?>
+    <div class="item"><img alt="<?php echo $carousel[11]['title'].' '.$carousel[11]['description'] ?>" src="<?php echo $this->baseUrl().'/'.$carouselitem['image'] ?>" width="100%">
+      <div class="carousel-caption">
+        <h4><?php echo $carouselitem['title'] ?></h4>
+        <p><?php echo $carouselitem['description'] ?></p>
+      </div>
+    </div>
+    <?php } ?>
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
+</div>
+

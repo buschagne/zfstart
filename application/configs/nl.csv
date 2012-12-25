@@ -136,12 +136,12 @@ close;Close
 
 
 memela_name;Memela Bush Lodge
-memela_short_description;Memela is a rustic bush lodge and camp in Kosi Bay. 
-memela_description; We offer good food, on suite bush huts and a simple and authentic nature experience. 
-memela_tagline1;Nature, Culture and Adventure! 
+memela_short_description;Memela is een rustieke bush lodge en kamp in Kosi Bay. 
+memela_description; Wij bieden goed eten, en-suite bush hutten en een eenvoudige en authentieke natuur ervaring.
+memela_tagline1;Natuur, cultuur en avontuur! 
 memela_tagline2;Bush and Beach, Whales and Elephants, Big and small, we have it all! 
 
-home;Home
+home;Thuis
 memela;Memela
 your_hosts;Your Hosts
 gallery;Photo Gallery
@@ -155,7 +155,7 @@ download_brochure_pdf;Download the PDF Brochure
 rates;Our Rates
 contacts;Contact Information
 
-our_tours_activities;Our tours and activities
+our_tours_activities;Tours and activities
 fishing_tours;Fishing 
 hiking_tours;Hiking
 backpacker_tours;Backpackers
@@ -163,6 +163,7 @@ birding_tours;Birding
 diving_tours;Diving
 nature_tours;Kosi Bay Nature
 cultural_tours;Kosi Bay Culture
+
 
 kosi_bay;Kosi Bay
 kosi_bay_map;Kosi Bay Map
