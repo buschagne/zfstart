@@ -28,7 +28,12 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
 
     protected function _initTranslate() {
         
-        $lang = $this->getOption('lang');
+        $userSession = new Zend_Session_Namespace("user");
+        if($userSession->language == false){
+            $lang = $this->getOption('lang');
+        }else{
+            $lang = $userSession->language;
+        }
         
         
         
