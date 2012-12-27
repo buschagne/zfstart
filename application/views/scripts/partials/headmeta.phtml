@@ -1,10 +1,8 @@
 <?php
 
-echo $this->headTitle('Memela Lodge & Bush Camp - Kosi Bay')->setSeparator(' | ');
+echo $this->headTitle($this->translate('site_title').' - '.$this->translate('site_subtitle'))->setSeparator(' | ');
 
 echo $this->headMeta()
-        ->appendName('description', 'All the Kosi Bay, Manguzi, Isimangaliso Tourism Information you need.')
-        ->appendName('keywords', 'kosi bay, swaziland, sodwana, ponta du ouro, rocktail, bhanga nek, manzengwenya, manguzi, kwangwanase, umhlabayalingana, tembe, thonga, maputaland, ponta du ouro, loggerhead, leatherback, turtle, bird watching, pels fishing owl, palmnut vulture, kosi hiking trail, hiking, slackpacking, slackpacker, memela, bush camp, maputaland,
-                Kosibay, Elephant Coast, KwaZulu Natal, Mozambique, Mocambique, accommodation, camping, Guesthouse, lodge, kosi bay lodge, Thobeka, Maputaland lodge, kosi bay cabins, kosi, kozi, kozi bay, kosibay, self-catering, selfcatering, self catering,
-                catered, Overnight, Holiday, Business, Vacation, Excursions, Zulu Land, Zululand, Maputaland, Isimangaliso, Isimangaliso Wetland Park, Greater St Lucia Wetlands Park, GSLWP, Lake Nhlange, fishing, rock and surf fishing, freshwater fishing,saltwater fishing, salt water fishing, fly-fishing, snorkelling, kingfish, turtles');
+        ->appendName('description', $this->translate('site-meta-description'))
+        ->appendName('keywords',$this->translate('site-meta-keywords'));
 ?>

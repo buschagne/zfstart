@@ -16,10 +16,10 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap {
 
     //CLI TOOLS
 
-        if (isset($_SERVER["argv"]) && !empty($_SERVER["argv"])) {
-            $cli = new Doctrine_Cli($doctrineConfig);
-            $cli->run($_SERVER["argv"]);
-        }
+//        if (isset($_SERVER["argv"]) && !empty($_SERVER["argv"])) {
+//            $cli = new Doctrine_Cli($doctrineConfig);
+//            $cli->run($_SERVER["argv"]);
+//        }
     }
 
     protected function _initUtf8() {

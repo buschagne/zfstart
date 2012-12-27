@@ -1,6 +1,6 @@
 body{
   
-  background-image: url('../images/sand3.jpg');
+/*  background-image: url('../images/sand3.jpg');*/
 }
 
 .breadcrumb2 {
@@ -18,7 +18,7 @@ body{
 .brand{
   padding: 5px;
   margin-top: -15px;
-  background-image: url('../images/sand1b.jpg');
+/*  background-image: url('../images/sand1b.jpg');*/
 }
 .brand a{
   text-decoration: none;

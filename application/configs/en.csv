@@ -135,58 +135,16 @@ open;Open
 close;Close
 
 
-memela_name;Memela Bush Lodge
-memela_short_description;Memela is a rustic bush lodge and camp in Kosi Bay. 
-memela_description; We offer good food, on suite bush huts and a simple and authentic nature experience. 
-memela_tagline1;Nature, Culture and Adventure! 
-memela_tagline2;Bush and Beach, Whales and Elephants, Big and small, we have it all! 
+site_name;Site Name
+site_short_description;Site short description
+site_description; Site longer description over this and that
+site_tagline1;Site tagline 111111 11111
+site_tagline2;Site tagline 222222 22222
 
-home;Home
-memela;Memela
-your_hosts;Your Hosts
-gallery;Photo Gallery
-the_lodge;The Lodge
-the_bush_camp;The Busch Camp
-the_camp_site;The Camp Site
-news;News
-information_faq;Information
-faq;Frequently Asked Questions
-download_brochure_pdf;Download the PDF Brochure
-rates;Our Rates
-contacts;Contact Information
-
-our_tours_activities;Our tours and activities
-fishing_tours;Fishing 
-hiking_tours;Hiking
-backpacker_tours;Backpackers
-birding_tours;Birding
-diving_tours;Diving
-nature_tours;Kosi Bay Nature
-cultural_tours;Kosi Bay Culture
-
-kosi_bay;Kosi Bay
-kosi_bay_map;Kosi Bay Map
-the_region;Mozambique, Tembe, Ndumo, Rocktail, Mabibi 
-isimangaliso;Isimangaliso
-kosi_bay_directions;Kosi Bay Directions
-manguzi;Manguzi
-border_post;Border Post
-follow_us;Follow Us
-fb;FB
-twitter;Twitter
-youtube;Youtube Channel
-your_profile;Your Reservations
-new_booking_inquiry;New Booking Inquiry
-check_reservation;Check Reservation
-notifications;Notifications
-subscribe;Subscribe
-sign_in;Sign In
-
-
-
-
-simple_authentic;"“Simple but authentic”"
-
+site_title;Site Title
+site_subtitle;Subtitle
+site-meta-description;Meta Description
+site-meta-keywords;Meta Keywords,Meta Keyword,Meta Keywor,Meta Keywo,Meta Keyw,Meta Key
 
  
 
