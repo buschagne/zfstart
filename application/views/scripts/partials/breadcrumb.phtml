@@ -1,4 +1,3 @@
-
 <ul class="breadcrumb2">
   <li>
     <a href="<?php echo $this->baseUrl() ?>"><?= $this->translate('home'); ?></a> 
@@ -12,12 +11,7 @@
         <?php
       } else {
         ?>
-        <a href='
-           <?php echo $this->baseUrl() ?>/
-           <?php echo $page->getController() ?>/
-           <?php echo $page->getAction() ?>'>
-          <span class='divider'> | </span><?= $this->translate($page->getLabel()) ?>
-        </a>
+        <span class='divider'> | </span><a href='<?php echo $this->baseUrl() ?>/<?php echo $page->getController() ?>/<?= $this->translate($page->getLabel()) ?></a>
         <?php
       }
       ?></li><?php
